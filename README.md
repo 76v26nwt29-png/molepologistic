@@ -1,35 +1,27 @@
-# Molepo Logistics Holdings — Website
+# Molepo Logistic Holding — Website
 
-The public website for **Molepo Logistics Holdings**, a Johannesburg-based South African company focused on passenger transportation, fleet services and practical logistics solutions.
+Corporate website for Molepo Logistic Holding, the trading identity of Molepo Logistic Holdings (Pty) Ltd.
 
-It is a single, mobile-first page with sections for services, about (mission and vision), how we work, and contact. The contact section includes an enquiry form whose submissions are collected by Netlify Forms.
+## Deployment
+- Static HTML, CSS and vanilla JavaScript.
+- Cloudflare Pages deploys the repository root.
+- No build command or package installation is required.
+- This redesign is on `redesign/international-corporate`. Do not change production until the preview is reviewed and approved.
 
-## Technology
+## Pages
+- `index.html` — homepage and WhatsApp-assisted quotation request.
+- `services/*.html` — dedicated service pages.
+- `company-profile.html` — print-ready profile; use Download / Print PDF and choose Save as PDF.
+- `privacy.html` — privacy notice.
+- `404.html` — not-found page.
+- `assets/` — brand mark and social preview artwork.
 
-- Plain HTML, CSS and a small amount of vanilla JavaScript. There is no build step and nothing to install.
-- **Netlify Forms** for the enquiry form (`enquiry`), with honeypot spam protection and an inline confirmation message. `/thank-you` is the fallback page if JavaScript is unavailable.
-- Google Fonts: Inter (body and headings) and Instrument Serif (italic accents).
+## Quotation requests
+The website form formats the enquiry and opens WhatsApp to +27 84 240 9561. The visitor must review and press Send. The site does not store or transmit form details independently. Do not describe this as a bot or server-side form.
 
-## Files
+## Before production approval
+1. The user has confirmed the legal name and registration number, the `info@molepologistic.co.za` mailbox, the listed telephone/WhatsApp numbers, and the leadership initials.
+2. Genuine company/vehicle photographs will be added later when available. Until then, retain the original vector artwork; do not substitute generic or AI-generated vehicle photos.
+3. Confirm service descriptions and operational claims before publication.
 
-| File | Purpose |
-| --- | --- |
-| `index.html` | The full website (styles and script are inline) |
-| `thank-you.html` | Confirmation page shown after a form submission when JavaScript is off |
-| `404.html` | Branded "page not found" page |
-| `favicon.svg` | "ML" brand-mark icon |
-| `netlify.toml` | Publishes the project root and adds security headers |
-
-## Running locally
-
-Open `index.html` in a browser. To test the enquiry form locally, run `netlify dev` from the project root.
-
-## Managing enquiries
-
-Submissions appear in the Netlify dashboard under **Forms → enquiry**. To get an email for every new enquiry, add an email notification under **Forms → Form notifications**.
-
-## Before sharing widely
-
-- Confirm the wording, email address and phone numbers are correct.
-- The site intentionally makes no claims about fleet size, licences, clients, years of experience, certifications or service areas. Add these only once confirmed.
-- A custom domain (for example `molepologistics.co.za`) can be registered and connected in Netlify's domain settings when the company is ready.
+Palette: graphite navy, mineral white and restrained cobalt blue.
