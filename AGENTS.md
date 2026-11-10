@@ -1,27 +1,25 @@
 # AGENTS.md
 
 ## Architecture
-A static, single-page marketing site for Molepo Logistics Holdings. There is no framework, package.json or build step. Netlify publishes the repository root (`netlify.toml` → `publish = "."`).
+This is a static Cloudflare Pages site built with plain HTML, CSS and vanilla JavaScript. There is no package manager, framework or build step. Cloudflare Pages publishes the repository root.
 
-- `index.html` holds everything: CSS in `<style>`, an inline SVG icon sprite (`<symbol id="i-*">`, used with `<use href="#i-…">`), the page sections, and one IIFE `<script>` at the end.
-- `thank-you.html` / `404.html` are self-contained pages that share the same palette.
-- `.netlify/features/netlify-forms` is a marker that tells the deploy pipeline to enable form detection. Do not delete it.
+## Main pages
+- `index.html`: corporate homepage, service overview and client-side WhatsApp quotation request form.
+- `services/*.html`: dedicated service information pages.
+- `company-profile.html`: print-ready company profile.
+- `privacy.html`: POPIA-oriented privacy notice.
+- `404.html`: not-found page.
+- `assets/`: brand marks and social preview artwork.
 
-## Page sections (in order)
-`#home` hero → `#services` → `#about` → `#approach` (dark) → `#contact` (enquiry form + contact panel) → footer. A fixed `.quickbar` (Call / Enquire) appears only at ≤720px.
+## Enquiry form
+The form validates required fields and prepares a WhatsApp message addressed to +27 84 240 9561. It opens WhatsApp; the visitor must review and press Send. The website does not store or independently submit form details. Do not describe this as a server-side form or automated bot.
 
-## Conventions
-- Design tokens are CSS custom properties in `:root` (forest green `--green`, cream `--cream`, sand/gold accents). Reuse them; don't hard-code new colours.
-- Headings use Inter 800; `<em>` inside `h1`/`h2` is set in Instrument Serif italic as the accent style.
-- Breakpoints: 960px, 880px (single-column layouts), 720px (mobile menu, quickbar, hidden top bar).
-- Elements with `.reveal` fade in on scroll only when JS adds the `js` class to `<html>`, so content stays visible without JS. `prefers-reduced-motion` disables all animation.
-- Keep it build-free. Don't add a bundler or framework unless the product owner asks for one.
-
-## Enquiry form (Netlify Forms)
-- Form name `enquiry`. Fields: `name`, `organisation`, `email`, `phone`, `service`, `preferred-date`, `location`, `message`, plus hidden `form-name`, `subject` and the honeypot `bot-field`.
-- JS submits URL-encoded data to `/` and shows the inline `#formSuccess` state. Without JS, the form posts to `/thank-you`.
-- Service cards carry `data-service="…"`, which pre-selects the matching `<option>`. Keep those values identical to the option text.
-- If you rename or remove fields, older submissions keep their data but the UI shows only the current fields.
-
-## Content rules
-Don't invent facts (fleet size, licences, clients, years in operation, certifications, service areas, prices). The contact details must stay consistent across the top bar, hero, contact panel, footer, quickbar, thank-you page and JSON-LD block.
+## Content safeguards
+- Do not invent fleet size, clients, licences, insurance status, certifications, fixed prices, service capacity or completed projects.
+- Quote-based pricing only; no fixed price list.
+- Do not publish a physical street address unless the company confirms it should be public.
+- Confirm legal entity name and registration number against current CIPC documentation before production.
+- Confirm that info@molepologistic.co.za is active and monitored before production.
+- Use genuine company/vehicle photographs only when supplied or approved.
+- Do not change the production branch without explicit approval.
+- The new palette is graphite navy, mineral white and restrained cobalt blue; do not restore the previous green/cream/gold palette.
