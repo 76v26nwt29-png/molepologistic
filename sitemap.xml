@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://molepologistic.pages.dev/</loc>
-    <lastmod>2026-11-08</lastmod>
-  </url>
-  <url>
-    <loc>https://molepologistic.pages.dev/privacy</loc>
-    <lastmod>2026-11-08</lastmod>
-  </url>
+<url><loc>https://molepologistic.co.za/</loc></url>
+<url><loc>https://molepologistic.co.za/company-profile.html</loc></url>
+<url><loc>https://molepologistic.co.za/privacy.html</loc></url>
+<url><loc>https://molepologistic.co.za/services/passenger-transportation.html</loc></url>
+<url><loc>https://molepologistic.co.za/services/vehicle-hire.html</loc></url>
+<url><loc>https://molepologistic.co.za/services/fleet-services.html</loc></url>
+<url><loc>https://molepologistic.co.za/services/logistics-solutions.html</loc></url>
+<url><loc>https://molepologistic.co.za/services/staff-transportation.html</loc></url>
+<url><loc>https://molepologistic.co.za/services/school-institutional-transport.html</loc></url>
+<url><loc>https://molepologistic.co.za/services/events-group-transport.html</loc></url>
 </urlset>
