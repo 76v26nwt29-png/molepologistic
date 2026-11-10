@@ -1,1 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="#173f32"/><text x="32" y="41" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="25" font-weight="800" letter-spacing="-1.5" fill="#f5f0e5">ML</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="5" fill="#101a2a"/><path d="M10 47V17h8l14 16 14-16h8v30h-9V30L32 42 19 30v17z" fill="#fff"/><path d="M54 17h-9v30h9z" fill="#4e86ed"/></svg>
